@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Store</title>
     <link rel="stylesheet" href="../CSS/style.css">
+
 </head>
+
 <body>
-    
+
     <div class="principal">
         Free shipping on orders above $150 in sweet store
     </div>
 
-    
+
     <header class="header">
         <div class="header-content">
-            
-        <section class="bar-principal">
-            <div class="social-icons">
-                <button onclick="alert('Facebook')">
-                    <img src="../ICONS/icon facebook.png" alt="Facebook" class="social-icon-img">
-                </button>
-                <button onclick="alert('WhatsApp')">
-                    <img src="../ICONS/wasap icon.png"WhatsApp" class="social-icon-img">
-                </button>
-                <button onclick="alert('Instagram')">
-                    <img src="../ICONS/instagram icon.png" alt="Instagram" class="social-icon-img">
-                </button>
+
+            <section class="bar-principal">
+                <div class="social-icons">
+                    <button onclick="alert('Facebook')">
+                        <img src="../ICONS/icon facebook.png" alt="Facebook" class="social-icon-img">
+                    </button>
+                    <button onclick="alert('WhatsApp')">
+                        <img src="../ICONS/wasap icon.png" WhatsApp" class="social-icon-img">
+                    </button>
+                    <button onclick="alert('Instagram')">
+                        <img src="../ICONS/instagram icon.png" alt="Instagram" class="social-icon-img">
+                    </button>
+                </div>
+            </section>
+
+             <!-- Carrito-->
+            <div id="cart" class="cart">
+                <!-- Button for the close car -->
+                <button class="close-cart">✖</button>
+                <h2>Carrito de compras</h2>
+                <div id="cart-items"></div>
+                <p>Total: $<span id="cart-total">0.00</span></p>
+                <button id="clear-cart">Vaciar carrito</button>
             </div>
-        </section>
 
 
-            
             <div class="logo">Sweet Store</div>
 
-            
+
             <div class="header-right">
                 <div class="search-box">
                     <input type="text" placeholder="Buscar...">
@@ -44,10 +56,11 @@
                     <img src="../ICONS/user icons.png" alt="User" class="user-icon-img">
                     Log in
                 </button>
-                <button class="cart-btn" onclick="alert('Carrito')">
+                <button class="cart-btn" id="cart-icon">
                     <img src="../ICONS/icon carrito shop.png" alt="Cart" class="cart-icon-img">
                     <span class="cart-badge">0</span>
                 </button>
+
             </div>
         </div>
     </header>
@@ -65,7 +78,7 @@
         </div>
     </nav>
 
-    
+
     <section class="hero-section">
         <div class="hero-content">
 
@@ -74,12 +87,12 @@
                     <div class="elevate">Elevate Your</div>
                     <div class="style">Style!</div>
                 </h1>
-                
+
                 <div class="gender-buttons">
                     <button class="gender-btn" onclick="alert('Sección Men')">Men</button>
                     <button class="gender-btn" onclick="alert('Sección Women')">Women</button>
                 </div>
-                
+
                 <button class="shop-now-btn" onclick="alert('Comenzar compras')">
                     Shop now
                 </button>
@@ -87,13 +100,25 @@
         </div>
     </section>
 
+    <!-- Productos -->
+    <section class="products-section">
+        <h2>Productos</h2>
+        <div class="products-grid" id="products"></div>
+    </section>
+
+    <script src="../JS/app.js"></script>
+
+
+
+
     <script>
-        
-        document.querySelector('.search-box input').addEventListener('keypress', function(e) {
+
+        document.querySelector('.search-box input').addEventListener('keypress', function (e) {
             if (e.key === 'Enter') {
                 alert('Buscando: ' + this.value);
             }
         });
     </script>
-    </body>
+</body>
+
 </html>
