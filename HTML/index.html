@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Store</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    
+    <div class="principal">
+        Free shipping on orders above $150 in sweet store
+    </div>
+
+    
+    <header class="header">
+        <div class="header-content">
+            
+        <section class="bar-principal">
+            <div class="social-icons">
+                <button onclick="alert('Facebook')">
+                    <img src="../ICONS/icon facebook.png" alt="Facebook" class="social-icon-img">
+                </button>
+                <button onclick="alert('WhatsApp')">
+                    <img src="../ICONS/wasap icon.png"WhatsApp" class="social-icon-img">
+                </button>
+                <button onclick="alert('Instagram')">
+                    <img src="../ICONS/instagram icon.png" alt="Instagram" class="social-icon-img">
+                </button>
+            </div>
+        </section>
+
+
+            
+            <div class="logo">Sweet Store</div>
+
+            
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <button class="login-btn" onclick="alert('Login')">
+                    <img src="../ICONS/user icons.png" alt="User" class="user-icon-img">
+                    Log in
+                </button>
+                <button class="cart-btn" onclick="alert('Carrito')">
+                    <img src="../ICONS/icon carrito shop.png" alt="Cart" class="cart-icon-img">
+                    <span class="cart-badge">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <div class="nav-content">
+            <ul class="nav-menu">
+                <li><button class="active" onclick="alert('Home')">Home</button></li>
+                <li><button onclick="alert('About')">About</button></li>
+                <li><button onclick="alert('Shirts')">Shirts</button></li>
+                <li><button onclick="alert('Accessories')">Accessories</button></li>
+                <li><button onclick="alert('Technology')">Technology</button></li>
+                <li><button onclick="alert('Jackets')">Jackets</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <section class="hero-section">
+        <div class="hero-content">
+
+            <div class="hero-text">
+                <h1>
+                    <div class="elevate">Elevate Your</div>
+                    <div class="style">Style!</div>
+                </h1>
+                
+                <div class="gender-buttons">
+                    <button class="gender-btn" onclick="alert('Sección Men')">Men</button>
+                    <button class="gender-btn" onclick="alert('Sección Women')">Women</button>
+                </div>
+                
+                <button class="shop-now-btn" onclick="alert('Comenzar compras')">
+                    Shop now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        
+        document.querySelector('.search-box input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                alert('Buscando: ' + this.value);
+            }
+        });
+    </script>
+    </body>
+</html>

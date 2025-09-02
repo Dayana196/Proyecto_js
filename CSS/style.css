@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header superior con envío gratis */
+.principal {
+    background: linear-gradient(90deg, #ec91bd, #f491e7);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Header principal */
+.header {
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.bar-principal {
+    background: rgb(245, 220, 220);
+    padding: 1px 10px;
+    border-radius: 25px;
+}
+
+/* Iconos sociales */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.social-icons button:hover {
+    transform: scale(1.1);
+    background: rgba(233, 30, 99, 0.1);
+}
+
+.social-icon-img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f491e7;
+    font-style: italic;
+}
+
+/* Área derecha del header */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding: 8px 35px 8px 15px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    width: 200px;
+    outline: none;
+}
+
+.search-box i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+}
+
+.login-btn,
+.cart-btn {
+    background: none;
+    border: none;
+    color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.login-btn:hover,
+.cart-btn:hover {
+    color: #e91e63;
+    background: rgba(233, 30, 99, 0.1);
+}
+
+.cart-btn {
+    position: relative;
+}
+
+.cart-icon-img {
+    width: 25px;
+}
+
+.user-icon-img {
+    width: 24px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #e71a5e;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navegación */
+.navigation {
+    background:  linear-gradient(135deg, #ec91bd, #f491e7);
+    border-top: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu button {
+    background: none;
+    border: none;
+    color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-menu button:hover {
+    color: #7a1134;
+    background: rgba(233, 30, 99, 0.1);
+}
+
+.nav-menu .active {
+    color: #b12453;
+    background: rgba(233, 30, 99, 0.1);
+}
+
+/* Sección principal */
+.hero-section {
+    background: linear-gradient(135deg, #fce4ec, #f8bbd9, #f48fb1);
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+}
+
+/* Texto principal */
+.hero-text {
+    flex: 1;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 3.0rem;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.hero-text .elevate {
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-text .style {
+    color: #1b1b1b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Botones Men/Women */
+.gender-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.gender-btn {
+    background: linear-gradient(135deg, #f17695, #e25a9e); /* rosa fucsia */
+    color: rgb(29, 29, 29);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(230, 0, 115, 0.4);
+}
+
+.gender-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(230, 0, 115, 0.6);
+    background: linear-gradient(135deg,#e25a9e, #ff4d79);
+}
+
+/* Botón Shop Now */
+.shop-now-btn {
+    background: linear-gradient(135deg, #ff9a9e, #ff6a88); /* degradado rosa */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px; /* bordes redondeados */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+}
+
+.shop-now-btn:hover {
+   transform: scale(1.08); /* se agranda un poquito */
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.6);
+    background: linear-gradient(135deg, #ff6a88, #ff9a9e);
+}
+
+/* Imagen de la modelo */
+.hero-section {
+    background: url("https://wallpapers.com/images/hd/pink-dress-1920-x-1080-wallpaper-215ptm291xqq04wd.jpg") no-repeat center center/cover;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .search-box input {
+        width: 150px;
+    }
+}
